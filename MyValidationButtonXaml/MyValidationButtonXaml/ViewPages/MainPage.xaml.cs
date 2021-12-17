@@ -12,7 +12,7 @@ namespace MyValidationButtonXaml.ViewPages
         {
             InitializeComponent();
             _userViewModel = new UserViewModel(false, false);
-            Console.WriteLine("User View Model before : " + _userViewModel.IsLastnameValid + "  " + _userViewModel.IsFirstnameValid);
+            Console.WriteLine("User View Model Init Lastname & Firstname before : " + _userViewModel.IsLastnameValid + "  " + _userViewModel.IsFirstnameValid);
             BindingContext = _userViewModel;
         }
 
@@ -25,7 +25,8 @@ namespace MyValidationButtonXaml.ViewPages
 
         private void OnSave(object sender, EventArgs e)
         {
-            Console.WriteLine("User View Model : " + _userViewModel.Firstname + "  " + _userViewModel.IsFirstnameValid);
+            Console.WriteLine("User View Model Firstname : " + _userViewModel.Firstname + "  " + _userViewModel.IsFirstnameValid);
+            Console.WriteLine("User View Model Lastname : " + _userViewModel.Lastname + "  " + _userViewModel.IsLastnameValid);
         }
     }
 }
