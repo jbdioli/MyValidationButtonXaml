@@ -16,6 +16,13 @@ namespace MyValidationButtonXaml.ViewPages
             BindingContext = _userViewModel;
         }
 
+        protected override void OnAppearing()
+        {
+
+            Console.WriteLine("[LifeCycle] : OnAppearing trigger");
+
+        }
+
         private void OnSave(object sender, EventArgs e)
         {
             Console.WriteLine("User View Model : " + _userViewModel.Firstname + "  " + _userViewModel.IsFirstnameValid);

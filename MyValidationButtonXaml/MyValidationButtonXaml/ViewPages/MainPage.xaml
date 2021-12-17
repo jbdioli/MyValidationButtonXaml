@@ -3,7 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:viewModels="clr-namespace:MyValidationButtonXaml.ViewModels;assembly=MyValidationButtonXaml"
+             xmlns:converters="clr-namespace:MyValidationButtonXaml.Converters;assembly=MyValidationButtonXaml"
              x:Class="MyValidationButtonXaml.ViewPages.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BooleanAndConverter x:Key="BooleanAndConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <!--<ContentPage.BindingContext>
         <viewModels:UserViewModel/>
     </ContentPage.BindingContext>-->
@@ -30,9 +36,14 @@
             <Button Margin="20"
                     BackgroundColor="CornflowerBlue"
                     TextColor="White"
-                    Text="Save" Clicked="OnSave"
-                    IsEnabled="{Binding IsFirstnameValid }"/>
-
+                    Text="Save" Clicked="OnSave">
+                <Button.IsEnabled>
+                    <MultiBinding  Converter="{StaticResource BooleanAndConverter}">
+                        <Binding Path="IsLastnameValid"/>
+                        <Binding Path="IsFirstnameValid"/>
+                    </MultiBinding>
+                </Button.IsEnabled>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

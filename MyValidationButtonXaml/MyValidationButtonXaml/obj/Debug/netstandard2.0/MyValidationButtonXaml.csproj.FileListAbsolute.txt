@@ -8,9 +8,9 @@ C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationBut
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.AssemblyInfoInputs.cache
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.AssemblyInfo.cs
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.csproj.CoreCompileInputs.cache
+C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.csproj.Fody.CopyLocal.cache
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.dll
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\ref\MyValidationButtonXaml.dll
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.pdb
-C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.csproj.Fody.CopyLocal.cache
 C:\Project\XAMARIN\MyValidationButtonXaml\MyValidationButtonXaml\MyValidationButtonXaml\obj\Debug\netstandard2.0\MyValidationButtonXaml.csproj.AssemblyReference.cache
