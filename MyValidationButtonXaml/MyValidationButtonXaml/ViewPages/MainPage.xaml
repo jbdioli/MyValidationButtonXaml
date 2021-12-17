@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:viewModels="clr-namespace:MyValidationButtonXaml.ViewModels;assembly=MyValidationButtonXaml"
+             x:Class="MyValidationButtonXaml.ViewPages.MainPage">
+    <!--<ContentPage.BindingContext>
+        <viewModels:UserViewModel/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Validation button with Xaml" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Entry Placeholder="Lastname" Margin="20" Text="{Binding Lastname}">
+                <Entry.Behaviors>
+                    <xct:TextValidationBehavior MinimumLength="3"
+                        IsValid="{Binding IsLastnameValid}"/>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Entry Placeholder="Firstname" Margin="20" Text="{Binding Firstname}">
+                <Entry.Behaviors>
+                    <xct:TextValidationBehavior MinimumLength="3"
+                        IsValid="{Binding IsFirstnameValid}"/>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Button Margin="20"
+                    BackgroundColor="CornflowerBlue"
+                    TextColor="White"
+                    Text="Save" Clicked="OnSave"
+                    IsEnabled="{Binding IsFirstnameValid }"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
