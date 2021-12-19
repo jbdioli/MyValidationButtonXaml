@@ -49,7 +49,7 @@
                     </MultiBinding>
                 </Button.IsEnabled>
             </Button>
-            <Button Text="Save" Clicked="OnSave"/>
+            <Button Text="Save for debug in CW" Clicked="OnSave"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
