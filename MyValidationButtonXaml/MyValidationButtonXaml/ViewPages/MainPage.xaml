@@ -26,14 +26,14 @@
 
             <Entry Placeholder="Lastname" Margin="20" Text="{Binding Lastname}">
                 <Entry.Behaviors>
-                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching, ValidateOnValueChanging"
                                                 IsValid="{Binding IsLastnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
 
             <Entry Placeholder="Firstname" Margin="20" Text="{Binding Firstname}">
                 <Entry.Behaviors>
-                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching, ValidateOnValueChanging"
                         IsValid="{Binding IsFirstnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
@@ -49,9 +49,7 @@
                     </MultiBinding>
                 </Button.IsEnabled>
             </Button>
-            <Button Text="Save for debug in CW" Clicked="OnSave"/>
+            <!--<Button Text="Save for debug in CW" Clicked="OnSave"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
-<!--Flags="ValidateOnAttaching"-->
