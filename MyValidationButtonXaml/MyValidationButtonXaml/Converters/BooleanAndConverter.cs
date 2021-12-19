@@ -11,7 +11,14 @@ namespace MyValidationButtonXaml.Converters
     {
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            return values.OfType<IConvertible>().All(System.Convert.ToBoolean);
+
+            if (values.Any(value => value == null))
+            {
+                return false;
+            }
+
+            var result = values.OfType<IConvertible>().All(System.Convert.ToBoolean);
+            return result;
         }
 
         public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)

@@ -14,6 +14,7 @@ namespace MyValidationButtonXaml.ViewPages
             _userViewModel = new UserViewModel(false, false);
             Console.WriteLine("[User View Model Init Lastname & Firstname before] : " + _userViewModel.IsLastnameValid + "  " + _userViewModel.IsFirstnameValid);
             BindingContext = _userViewModel;
+
         }
 
         protected override void OnAppearing()

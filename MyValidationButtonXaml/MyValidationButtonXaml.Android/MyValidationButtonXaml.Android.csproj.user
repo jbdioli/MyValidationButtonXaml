@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice>HUAWEI LYA-L29</SelectedDevice>
-    <ActiveDebugProfile>HUAWEI LYA-L29</ActiveDebugProfile>
+    <SelectedDevice>HUAWEI_Mate_20_X_API_29</SelectedDevice>
+    <ActiveDebugProfile>HUAWEI_Mate_20_X_API_29</ActiveDebugProfile>
     <DefaultDevice>HUAWEI_Mate_20_X_API_29</DefaultDevice>
   </PropertyGroup>
 </Project>

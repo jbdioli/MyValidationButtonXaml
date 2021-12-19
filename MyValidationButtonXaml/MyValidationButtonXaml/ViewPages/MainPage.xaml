@@ -11,7 +11,12 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <!--<ContentPage.BindingContext>
-        <viewModels:UserViewModel/>
+        <viewModels:UserViewModel>
+            <x:Arguments>
+                <x:Boolean>False</x:Boolean>
+                <x:Boolean>False</x:Boolean>
+            </x:Arguments>
+        </viewModels:UserViewModel>
     </ContentPage.BindingContext>-->
     <ContentPage.Content>
         <StackLayout>
@@ -21,14 +26,14 @@
 
             <Entry Placeholder="Lastname" Margin="20" Text="{Binding Lastname}">
                 <Entry.Behaviors>
-                    <xct:TextValidationBehavior MinimumLength="3"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching"
                         IsValid="{Binding IsLastnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
 
             <Entry Placeholder="Firstname" Margin="20" Text="{Binding Firstname}">
                 <Entry.Behaviors>
-                    <xct:TextValidationBehavior MinimumLength="3"
+                    <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching"
                         IsValid="{Binding IsFirstnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
