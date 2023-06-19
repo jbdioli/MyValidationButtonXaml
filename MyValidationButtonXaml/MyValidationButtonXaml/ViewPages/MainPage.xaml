@@ -8,6 +8,9 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:BooleanAndConverter x:Key="BooleanAndConverter" />
+            <Style x:Key="InvalidStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <!--<ContentPage.BindingContext>
@@ -27,6 +30,7 @@
             <Entry Placeholder="Lastname" Margin="20" Text="{Binding Lastname}">
                 <Entry.Behaviors>
                     <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching, ValidateOnValueChanging"
+                                                InvalidStyle="{StaticResource InvalidStyle}"
                                                 IsValid="{Binding IsLastnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
@@ -34,7 +38,8 @@
             <Entry Placeholder="Firstname" Margin="20" Text="{Binding Firstname}">
                 <Entry.Behaviors>
                     <xct:TextValidationBehavior MinimumLength="3" MaximumLength="10" Flags="ValidateOnAttaching, ValidateOnValueChanging"
-                        IsValid="{Binding IsFirstnameValid}"/>
+                                                InvalidStyle="{StaticResource InvalidStyle}"
+                                                IsValid="{Binding IsFirstnameValid}"/>
                 </Entry.Behaviors>
             </Entry>
 
